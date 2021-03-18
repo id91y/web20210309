@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="all.min.css">
+    <style>
+        #icon1 {
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <input onkeyup="changeCall()" type="text" id="input1">
+    <div><i id="icon1" class="fas fa-heart"></i></div>
+
+    <script>
+        function changeCall() {
+            var v = document.getElementById("input1").value
+            change(v);
+        }
+
+        function change(iconName) {
+            document.getElementById("icon1").className = iconName;
+        }
+
+    </script>
+
+</body>
+
+</html>
