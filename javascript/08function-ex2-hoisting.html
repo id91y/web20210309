@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    </style>
+</head>
+
+<body>
+    <script>
+        mf();
+        //hoisting ok
+        function mf(params) {
+            console.log("abc");
+        }
+        mf2();
+        //변수에 함수를 할당
+        //hoisting not ok
+        var mf2 = function (params) {
+            console.log("no name");
+        }
+
+
+    </script>
+</body>
+
+</html>
