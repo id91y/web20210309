@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <script>
+    //변수(var)는 2개의 영역중 하나에 속하게됨
+    //1.global(전역변수)
+    //2.function(함수영역)
+    function mf(params) {
+        var a = 3; //함수 영역(scope)
+        console.log(a);
+        console.log(b);
+    }
+    function mf2(){
+        var a = 4; //함수영역
+        var b = 6;
+        c =7; //global 전역변수 권장하지않음
+        console.log(a);
+        console.log(b);
+    }
+    var b =5; //global 전역변수
+    mf();
+    mf2();
+    console.log(b);
+    
+
+    </script>
+</body>
+
+</html>
