@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <input type="text" id="ip1">
+    <br>
+    <button onclick="pc()"><i class="fas fa-plus"></i></button>
+    <br>
+    <input type="text" id="ip2">
+    <br>
+    <i class="fas fa-equals"></i>
+    <br>
+    <input type="text" id="rs" readonly>
+
+    <script>
+        function pc() {
+            var a = document.getElementById("ip1").value;
+            var b = document.getElementById("ip2").value;
+            var c = add(a, b);
+            // var c = Number(a) + Number(b); 결과가같으면 상관없음
+            document.getElementById("rs").value = c;
+        }
+        function add(x,y) {
+            return Number(x) + Number(y);
+        }
+
+
+    </script>
+</body>
+
+</html>
