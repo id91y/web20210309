@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="all.min.css">
+    <style>
+          #rs1 {
+        box-sizing: border-box;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: brown;
+        color: white;
+        line-height: 100px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 50px;
+        margin-top: 10px;
+    }
+    </style>
+</head>
+
+<body>
+    <button onclick="rdn()">번호 뽑기</button>
+    <div id="rs1"></div>
+    <script>
+        function rdn() {
+            var ran = Math.floor(Math.random() * 45) + 1;
+            document.getElementById("rs1").innerHTML = ran;
+
+        }
+
+    </script>
+</body>
+
+</html>
