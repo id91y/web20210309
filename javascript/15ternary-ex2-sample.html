@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="all.min.css">
+    <style>
+        div {
+            font-size: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div onclick="cg()"><i class="far fa-heart"></i></div>
+    <script>
+        function cg() {
+            var i = document.querySelector("div>i");
+            var className = (i.className == "far fa-heart")
+                ? "fas fa-heart"
+                : "far fa-heart";
+            i.className = className;
+        }
+
+    </script>
+</body>
+
+</html>
