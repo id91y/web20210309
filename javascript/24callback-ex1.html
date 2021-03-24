@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <script>
+        function mf(a) {
+            console.log(a);
+        }
+        function mf2(a){
+            a();
+        }
+        mf(3);
+        mf("hello");
+
+        var f1 = function(){
+            console.log("f1 function");
+        }
+        f1();
+        mf2(f1);
+    </script>
+</body>
+
+</html>
