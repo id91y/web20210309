@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#bt1").on("click", function(){
+                $("h1").hide();
+            });
+            $("#bt2").on("click", function(){
+                $("h1").show();
+            });
+        });
+    </script>
+</head>
+
+<body>
+<button id = "bt1">hide</button>
+<button id = "bt2">show</button>
+<h1>Lorem, ipsum dolor.</h1>
+</body>
+
+</html>
